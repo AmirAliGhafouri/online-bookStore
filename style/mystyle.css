@@ -1,0 +1,31 @@
+ .img{
+    background-size: cover;
+ }
+
+ .btn.btn-primary{
+    background: #f36f1d !important;
+ }
+
+ .btn.btn-primary:hover{
+   background-color: #e23826 !important;
+ }
+
+ a{
+    color:#f36f1d ;
+ }
+
+ a:hover{
+   color:#e23826 ;
+ }
+
+ .form-container{
+    background-color: #292929;
+ }
+
+ .wrap{
+   box-shadow: 0px 0px 10px 5px #3a3a3a ;
+ }
+
+ .form-control{
+   border: thin solid #292929 !important;
+ }

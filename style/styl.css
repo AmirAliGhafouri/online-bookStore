@@ -1,0 +1,473 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*_________________________________________________________________ header */
+.top-bar{
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    margin:0px 30px 0px 10px;
+}
+
+.logo img{
+    width: 120px;
+    transition: all 1s;
+}
+
+.logo img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.topbar-button{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-button a{
+    margin-left: 10px;
+}
+
+
+.button{
+    padding: 10px 20px;
+    background-color: #f36f1d;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #e23826;
+    color: white;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/*______________header profile*/
+
+.header-prf{
+    margin-left: 25px;
+}
+
+.header-prf img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+
+/*______________ search*/
+
+.search input{
+    outline: none;
+    border: none;
+}
+
+.search input:not(#search){
+    height: 40px;
+    width: 350px;
+    border-radius: 7px 0px 0px 7px;
+    border-left:5px solid white;
+}
+
+#search{
+    height: 40px;
+    width: 70px;
+    background-color: #f3701d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+}
+
+#search:hover{
+    background-color: #e23826;
+}
+
+/*______________header wallpaper*/
+
+.header-wall{
+    background-image: url(../image/header_background2.jpg);
+    background-size: cover;
+    padding: 120px 0px;
+    text-align:center;
+}
+
+.header-wall h1{
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+
+}
+
+/*_________________________________________________________________ ERROR*/
+
+.error{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.error span{
+    color: #721c24;
+    background-color: #f8d7da;
+    padding-bottom: 3px;
+    font-weight: bold;
+    text-align: center;
+    border: thin solid #721c24;
+    padding: 2px;
+}
+
+/*_________________________________________________________________ Signin & Login*/
+
+.file{
+    background-color:#f3701d ;
+    padding: 10px 15px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.file:hover{
+    background-color: #e23826;
+}
+
+/*_________________________________________________________________________ index */
+
+.catrgory-title{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.product{
+    width: 270px;
+    height: 300px;
+    background-color: #292929;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.product:hover{
+    box-shadow: 0px 10px 15px 5px #777777;
+    transform: translate(0px , -10px);
+}
+
+.product img{
+    width: 170px;
+    height: 170px;
+    margin-top: 15px;
+}
+
+.product-type{
+    margin-top: 30px;
+    background: linear-gradient(to top ,#f3701d, #ffb98e , #f3701d);
+    padding: 24px 0px;
+    border-radius:0px 0px 10px 10px;
+}
+
+.product-type p{
+    font-size: 30px;
+    color: black;
+}
+
+
+/*_______________________________________________________ show product*/
+
+.product_container{
+    width: 250px;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top right , #f36f1d , #e23826);
+}
+
+.product-name{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+   
+}
+
+.product-name p{
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+.product-pic img{
+    width: 250px;
+    border-radius: 15px;
+    transition: all 1s;
+    transform: scale(1.05,1.05);
+}
+
+.product-pic{
+    width: 248px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: inherit;
+    padding-bottom: -3px;
+}
+
+.product-pic img:hover{
+    transform: scale(1.15,1.15);
+}
+
+/*_______________________________________________________________ download book */
+
+.book-info-container{
+    margin:100px 0px;
+}
+
+.show_book_info{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.show-book-pic img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.book-info{
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.book-info strong{
+    color:#f3701d ;
+}
+
+.book-info h2{
+    color:#ffffff ;
+    font-size: 40px;
+}
+
+.book-info>div:not(.download_btn-container){
+    margin: 20px 0px;
+    border-bottom: thin solid;
+    padding: 5px;
+}
+
+.show-book-disc{
+    width: 900px;
+    margin: auto;
+    padding: 50px 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #292929;
+    color: white;
+}
+
+.download_btn-container{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.download-btn{
+    padding: 15px 25px;
+    background-color: #f3701d ;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.download-btn:hover{
+    background-color: #e23826 ;
+}
+
+/*_______________________________________________________________  profile */
+
+.user-profile-container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 20px;
+
+}
+
+.user-profile-img{
+    text-align: center;
+}
+
+.user-profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+.user-profile-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-profile-info p{
+    color: #f3701d;
+}
+
+.user-profile-info strong{
+    color: white;
+}
+
+.user-profile-ncard{
+    text-align: center;
+    margin-top:30px ;
+}
+
+.user-profile-ncard p{
+    color: white;
+}
+
+.user-profile-ncard img{
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.user-profile-setting{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+/*tables*/
+.user-profile-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-profile-table h2{
+    color: white;
+    text-align: center;
+}
+
+.user-profile-table table{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.user-profile-table th , .user-profile-table td{
+    padding: 10px;
+    background-color: #f3701d;
+}
+
+.user-profile-table th{
+    background-color: #e23826;
+}
+
+/*_______________________________________________________________  edit */
+
+.edit-form{
+    width: 800px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px silver;
+    padding: 10px;
+    margin: auto;
+    margin-top:100px;
+}
+
+.edit-form h2{
+    background-color: #292929;
+    color:#f36f1d;
+    padding: 20px;
+}
+
+.edit-form div{
+    margin: 30px 0px;
+}
+
+.edit-form input{
+    outline: none;
+    width: 200px;
+    height: 40px;
+}
+
+#submit{
+    border-radius: 40px;
+    background: #f3701d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px;
+
+}
+
+#submit:hover{
+    background: #e23826;
+}
+
+.selection{
+    background-color: #292929;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
